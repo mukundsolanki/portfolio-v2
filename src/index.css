@@ -24,6 +24,11 @@ body {
   font-weight: bold;
 }
 
+.navbar__logo {
+  text-decoration: none;
+  color: rgb(87, 247, 154);
+}
+
 .navbar__links {
   list-style: none;
   display: flex;
@@ -59,23 +64,23 @@ body {
   margin-left: 10%;
 }
 
-#head1{
+#head1 {
   font-size: 35px;
   color: rgb(87, 247, 154);
 }
 
-#head2{
+#head2 {
   font-size: 45px;
   color: rgb(87, 247, 154);
 }
 
-#head3{
+#head3 {
   font-size: 24px;
   color: white;
   font-style: italic;
 }
 
-#tagline{
+#tagline {
   display: inline;
   color: white;
   font-size: 18px;
@@ -93,7 +98,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 .profile-picture {
@@ -103,4 +107,46 @@ body {
 .profile-picture:hover {
   transform: translateY(-5px);
   box-shadow: 10px 10px rgba(87, 247, 154, 0.829);
+}
+
+.about-section {
+  background-color: #00000058;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.about-heading {
+  font-size: 28px;
+  color: rgb(87, 247, 154);
+  margin-bottom: 20px;
+}
+
+.about-content {
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 1.5;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.bullet {
+  margin-right: 8px;
+  color: #ffffff;
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+.icon {
+  padding-right: 10px;
+  margin-top: 20px;
+  transition: fill 0.3s ease;
+}
+
+.icon:hover {
+  fill: rgb(87, 247, 154);
 }
