@@ -7,11 +7,6 @@ import profilePicture from '../images/mukund.jpg';
 import Footer from './Footer';
 
 const Home = () => {
-  const email = 'mukundsolanki665@gmail.com';
-  const handleEmailClick = () => {
-    window.location.href = `mailto:${email}`;
-  };
-
   useEffect(() => {
     const elements = document.querySelectorAll('.fade-in-animation');
     elements.forEach((element) => {
@@ -28,7 +23,7 @@ const Home = () => {
         <h2 id='head3'>A software developer from India</h2>
         <p id='tagline'>"Transforming Ideas into Functional Reality"</p>
 
-        <a href="#" className='resume-button'>
+        <a rel="noopener" href="#" className='resume-button'>
           <button>Download Resume</button>
         </a>
 

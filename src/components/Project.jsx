@@ -24,7 +24,7 @@ const Projects = () => {
           <h1 className="about-heading">PROJECTS</h1>
           <div className="project-list">
 
-            <a className="text-link" target="_blank" href="https://devlit.vercel.app/">
+            <a rel="noreferrer" className="text-link" target="_blank" href="https://devlit.vercel.app/">
               <div className="project-card">
                 <img className="project-image" src={Project1} alt='devlit' />
                 <div className="project-details">
@@ -34,7 +34,7 @@ const Projects = () => {
               </div>
             </a>
 
-            <a className="text-link" target="_blank" href="https://github.com/mukundsolanki/CertiCraft">
+            <a rel="noreferrer" className="text-link" target="_blank" href="https://github.com/mukundsolanki/CertiCraft">
               <div className="project-card">
                 <img className="project-image" src={Project2} alt='certicraft' />
                 <div className="project-details">
@@ -44,7 +44,7 @@ const Projects = () => {
               </div>
             </a>
 
-            <a className="text-link" target="_blank" href="https://flip-the-cards-deployment.vercel.app/">
+            <a rel="noreferrer" className="text-link" target="_blank" href="https://flip-the-cards-deployment.vercel.app/">
               <div className="project-card">
                 <img className="project-image" src={Project3} alt='flip-yhe-cards' />
                 <div className="project-details">
@@ -57,7 +57,7 @@ const Projects = () => {
 
           <div className="project-list">
 
-            <a className="text-link" target="_blank" href="https://github.com/mukundsolanki/Quizit-the-quiz-app">
+            <a rel="noreferrer" className="text-link" target="_blank" href="https://github.com/mukundsolanki/Quizit-the-quiz-app">
               <div className="project-card">
                 <img className="project-image" src={Project4} alt='quizit' />
                 <div className="project-details">
@@ -66,7 +66,7 @@ const Projects = () => {
                 </div>
               </div>
             </a>
-            <a className="text-link" target="_blank" href="https://github.com/mukundsolanki/SyncPad">
+            <a rel="noreferrer" className="text-link" target="_blank" href="https://github.com/mukundsolanki/SyncPad">
               <div className="project-card">
                 <img className="project-image" src={Project5} alt='syncpad' />
                 <div className="project-details">
@@ -76,7 +76,7 @@ const Projects = () => {
               </div>
             </a>
 
-            <a className="text-link" target="_blank" href="https://mukund4s.live">
+            <a rel="noreferrer" className="text-link" target="_blank" href="https://mukund4s.live">
               <div className="project-card">
                 <img className="project-image" src={Project6} alt='portfolio' />
                 <div className="project-details">
@@ -88,7 +88,7 @@ const Projects = () => {
           </div>
 
           <div >
-            <p id="more-text">You can find more projects at <a className="text-link" target="_blank" id='more-text-link' href="https://github.com/mukundsolanki">Github</a></p>
+            <p id="more-text">You can find more projects at <a rel="noreferrer" className="text-link" target="_blank" id='more-text-link' href="https://github.com/mukundsolanki">Github</a></p>
           </div>
         </div>
       </section>
