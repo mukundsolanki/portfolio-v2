@@ -23,7 +23,7 @@ const SocialPlatforms = () => {
         <a href="https://www.codechef.com/" target="_blank" rel="noopener noreferrer">
           <CodechefIcon className="icon" />
         </a>
-        <a onClick={handleEmailClick} href="" target="_blank" rel="noopener noreferrer">
+        <a onClick={handleEmailClick} href="#" target="_blank" rel="noopener noreferrer">
           <MailIcon className="icon" />
         </a>
       </div>

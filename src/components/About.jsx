@@ -1,11 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import SocialsPlatforms from './SocialsPlatforms'
+import Footer from './Footer';
 
 const About = () => {
+  useEffect(() => {
+    const elements = document.querySelectorAll('.fade-in-animation');
+    elements.forEach((element) => {
+      element.classList.add('fade-in');
+    });
+  }, []);
+
   return (
     <div >
       <div className="about-container">
         <section className="about-section">
+        <div className={`fade-in-animation`}>
           <h1 className="about-heading">ABOUT ME</h1>
           <div className="about-content">
             <ul>
@@ -30,7 +39,10 @@ const About = () => {
             </ul>
           </div>
           <SocialsPlatforms />
+          </div>
         </section>
+
+        <Footer/>
       </div>
 
     </div>

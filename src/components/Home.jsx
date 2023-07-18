@@ -1,47 +1,49 @@
-import React from 'react';
-import { ReactComponent as LinkedInIcon } from '../images/linkedin.svg';
-import { ReactComponent as GitHubIcon } from '../images/github.svg';
-import { ReactComponent as CodechefIcon } from '../images/codechef.svg';
-import { ReactComponent as MailIcon } from '../images/mail.svg';
+import React, { useEffect } from 'react';
+// import { ReactComponent as LinkedInIcon } from '../images/linkedin.svg';
+// import { ReactComponent as GitHubIcon } from '../images/github.svg';
+// import { ReactComponent as CodechefIcon } from '../images/codechef.svg';
+// import { ReactComponent as MailIcon } from '../images/mail.svg';
 import profilePicture from '../images/mukund.jpg';
+import Footer from './Footer';
 
 const Home = () => {
   const email = 'mukundsolanki665@gmail.com';
   const handleEmailClick = () => {
     window.location.href = `mailto:${email}`;
   };
+
+  useEffect(() => {
+    const elements = document.querySelectorAll('.fade-in-animation');
+    elements.forEach((element) => {
+      element.classList.add('fade-in');
+    });
+  }, []);
+
   return (
+    <>
     <div className="home-container">
-      <div className="home-text">
+      <div className={`home-text fade-in-animation`}>
         <h1 id='head1'>Hey there!👋</h1>
-        <h1 id='head2'>I am Mukund Solanki</h1>
+        <h1 id='head2'>I am <span className='name'>Mukund Solanki</span></h1>
         <h2 id='head3'>A software developer from India</h2>
         <p id='tagline'>"Transforming Ideas into Functional Reality"</p>
 
-        <div className="platform-icons">
-          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
-            <LinkedInIcon className="icon" />
-          </a>
-          <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-            <GitHubIcon className="icon" />
-          </a>
-          <a href="https://www.codechef.com/" target="_blank" rel="noopener noreferrer">
-            <CodechefIcon className="icon" />
-          </a>
-          <a onClick={handleEmailClick} href="" target="_blank" rel="noopener noreferrer">
-            <MailIcon className="icon" />
-          </a>
-        </div>
+        <a href="#" className='resume-button'>
+          <button>Download Resume</button>
+        </a>
+
       </div>
-      <div className="profile-picture-container">
+      <div className={`profile-picture-container fade-in-animation`}>
         <img
           src={profilePicture}
           alt="Profile"
           className="profile-picture"
         />
       </div>
-
     </div>
+
+    <Footer/>
+    </>
   );
 };
 
